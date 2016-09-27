@@ -349,7 +349,7 @@ tools:::.check_package_CRAN_incoming
       don't use variables that don't exist. This sometimes raises false 
       positives with functions that use non-standard evaluation (NSE),
       like `subset()` or `with()`. Generally, I think you should avoid NSE in 
-      package functions, and hence avoid this NOTE, but if you can not, see 
+      package functions if only to avoid this NOTE. If you cannot, see 
       `?globalVariables` for how to suppress this NOTE.
       
     * You are not allowed to use `.Internal()` in a package. Either call 
